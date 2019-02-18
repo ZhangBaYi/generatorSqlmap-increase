@@ -118,12 +118,12 @@
 
 		&lt;!&ndash; 商品表 &ndash;&gt;
 		<table schema="" tableName="bbs_product" domainObjectName="product.Product">
-			&lt;!&ndash; 商品介绍 大字段映射 &ndash;&gt;
-			<columnOverride column="description" javaType="String" jdbcType="longtext" />
+			&lt;!&ndash; 商品介绍 大字段映射   mysql中longtext  对应  mybatis中LONGVARCHAR  对应  Java中String     &ndash;&gt;
+			<columnOverride column="description" javaType="String" jdbcType="LONGVARCHAR" />
 			&lt;!&ndash; 包装清单 大字段映射 &ndash;&gt;
-			<columnOverride column="package_list" javaType="String" jdbcType="longtext" />
+			<columnOverride column="package_list" javaType="String" jdbcType="LONGVARCHAR" />
 			&lt;!&ndash; 商品图片 大字段映射 &ndash;&gt;
-			<columnOverride column="img_url" javaType="String" jdbcType="longtext" />
+			<columnOverride column="img_url" javaType="String" jdbcType="LONGVARCHAR" />
 		</table>
 
 		&lt;!&ndash;库存表&ndash;&gt;
