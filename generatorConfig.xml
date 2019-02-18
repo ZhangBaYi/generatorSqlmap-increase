@@ -155,11 +155,12 @@
 		<!-- 商品表 -->
 		<table schema="" tableName="bbs_product" domainObjectName="Product">
 			<!-- 商品介绍 大字段映射 -->
-			<columnOverride column="description" javaType="String" jdbcType="longtext" />
+			<!--mysql中longtext  对应  mybatis中LONGVARCHAR  对应  Java中String-->
+			<columnOverride column="description" javaType="String" jdbcType="LONGVARCHAR" />
 			<!-- 包装清单 大字段映射 -->
-			<columnOverride column="package_list" javaType="String" jdbcType="longtext" />
+			<columnOverride column="package_list" javaType="String" jdbcType="LONGVARCHAR" />
 			<!-- 商品图片 大字段映射 -->
-			<columnOverride column="img_url" javaType="String" jdbcType="longtext" />
+			<columnOverride column="img_url" javaType="String" jdbcType="LONGVARCHAR" />
 		</table>
 
 		<!--库存表-->
